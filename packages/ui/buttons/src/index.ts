@@ -1,4 +1,0 @@
-export * from './Right/Button'
-export * from './Right/wrapper'
-export * from './Left/Button'
-export * from './Left/wrapper'

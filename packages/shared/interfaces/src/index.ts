@@ -1,6 +1,0 @@
-export * from './CardGridProps'
-export * from './CardItemProps'
-export * from './GalleryItem'
-export * from './ModalProps'
-export * from './MainMenuProps'
-export * from './HeaderLayoutProps'
