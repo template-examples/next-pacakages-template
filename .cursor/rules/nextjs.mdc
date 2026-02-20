@@ -1,0 +1,19 @@
+---
+description: Next.js App Router best practices
+globs: **/*.{js,jsx,ts,tsx}
+alwaysApply: true
+---
+
+# Next.js Rules
+
+- Use App Router (`app/`) with `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`
+- Server Components by default — add `'use client'` only when necessary (event handlers, hooks, browser APIs)
+- Named exports over default exports: `export function Button() {}`
+- kebab-case for directories: `components/auth-form/`
+- PascalCase for component files: `AuthForm.tsx`
+- Use `next/image` for all images, `next/link` for navigation
+- Fetch data in Server Components, pass down as props
+- Route handlers go in `app/api/**/route.ts`
+- Use `generateMetadata()` for dynamic SEO metadata
+- Prefer `loading.tsx` + Suspense over manual loading states
+- Use `notFound()`, `redirect()` from `next/navigation` in server context
